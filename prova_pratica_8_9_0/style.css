@@ -1,0 +1,122 @@
+:root {
+  --color-bg-body: #f8f9fa;
+  --color-white: #ffffff;
+  --color-black: #000000;
+
+  --color-primary: #007bff;
+  --color-accent: #ffc107;
+
+  --color-text-heading: #343a40;
+  --color-text-quote: #495057;
+
+  --color-bg-container: var(--color-white);
+  --color-bg-quote-box: #e9ecef;
+  --color-bg-footer: #333;
+
+  --color-button-success: #28a745;
+  --color-button-success-hover: #218838;
+
+  --shadow-light: rgba(0, 0, 0, 0.1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-bg-body);
+  font-family: 'Times New Roman', Times, serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+header {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+header h1 {
+  font-size: 2rem;
+}
+
+header p {
+  font-size: 1.2rem;
+}
+
+.container {
+  background-color: var(--color-bg-container);
+  padding: 40px 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px var(--shadow-light);
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+  margin: 20px 0;
+  position: relative;
+}
+
+.quote-box {
+  position: relative;
+  
+  background-color: var(--color-bg-quote-box);
+  padding: 20px;
+  padding-top: 90px;
+  border-left: 5px solid var(--color-primary);  
+}
+
+#number-quote {
+  font-size: 1.5rem;
+  background-color: var(--color-accent);
+  color: var(--color-black);
+  padding: 8px 16px;
+  border-radius: 100%;
+  display: inline-block;
+  position: absolute;
+  left: 20px;
+  top: 40px;
+}
+
+#quote {
+  font-style: italic;
+  font-size: 1.1rem;
+  color: var(--color-text-quote);
+  margin-top: 20px;
+}
+
+#author {
+  text-align: right;
+  font-size: 14px;
+  font-weight: bold;
+  color: var(--color-primary);
+  margin-top: 30px;
+}
+
+button {
+  background-color: var(--color-button-success);
+  color: var(--color-white);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 30px
+}
+
+footer {
+  background-color: var(--color-bg-footer);
+  color: var(--color-white);
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+  margin-top: auto;
+}
+
+footer p {
+  margin: 5px 0;
+}

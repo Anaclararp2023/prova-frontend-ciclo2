@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contador de Texto</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Ferramenta de Contagem de Texto</h1>
+    <p>Contador em tempo real de caracteres e palavras</p>
+  </header>
+
+  <div class="base-container">
+    <div class="container">
+      <h2>Digite seu texto abaixo:</h2>
+      <textarea id="text-area" rows="10" placeholder="Cole ou digite seu texto aqui..."></textarea>
+
+      <div class="counters">
+        <p>Caracteres: <span id="char-count">0</span></p>
+        <p>Palavras: <span id="word-count">0</span></p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2023 Projeto Desenvolvido por <span id="your-name"></span></p>
+    <p>PARA A DISCIPLINA DE DESENVOLVIMENTO WEB FRONT-END (TURMA A)</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

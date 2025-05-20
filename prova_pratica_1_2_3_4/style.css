@@ -1,0 +1,115 @@
+
+:root {
+    --color-background-body: #f4f4f4;
+    --color-background-header: #007bff;
+    --color-background-container: #fff;
+    --color-background-footer: #333; 
+
+    --color-text-header-title: white;
+    --color-text-header-subtitle: #e9ecef;
+    --color-text-dark: #333; 
+    --color-text-muted: #555;
+    --color-text-light: #e9ecef; 
+    --color-text-accent: #007bff; 
+
+    --color-border-light: #ccc;
+
+    --color-primary: #007bff; 
+    --color-primary-dark: #0056b3; 
+
+    --shadow-light: rgba(0, 0, 0, 0.1);
+    --shadow-medium: rgba(0, 0, 0, 0.1); 
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-background-body);
+  color: var(--color-text-dark);
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background-color: var(--color-background-header);
+  color: var(--color-text-header-title);
+  text-align: center;
+  padding: 20px;
+}
+
+header p {
+  color: var(--color-text-header-subtitle);
+  margin-top: 5px;
+}
+
+.base-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.container {
+  background-color: var(--color-background-container);
+  box-shadow: 0 2px 8px var(--shadow-light);
+  border-radius: 8px;
+  padding: 25px;
+  padding-top: 50px;
+  width: 100%;
+  max-width: 600px;
+}
+
+.container h2 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+textarea {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  border: 1px solid var(--color-border-light);
+  border-radius: 4px;
+  resize: vertical;
+  color: var(--color-text-dark);
+  background-color: #fff;
+  box-sizing: border-box;
+}
+
+.counters {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 15px;
+}
+
+.counters p {
+  font-size: 16px;
+}
+
+.counters span {
+  font-weight: bold;
+  color: var(--color-text-accent);
+}
+
+footer {
+  background-color: var(--color-background-footer);
+  color: var(--color-text-light);
+  text-align: center;
+  padding: 20px 10px;
+}
+
+footer span {
+  color: var(--color-text-light);
+}
+
+footer p:last-child {
+    margin-top: 8px;
+}

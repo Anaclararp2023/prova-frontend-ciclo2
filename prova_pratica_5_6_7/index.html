@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de IMC</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Calculadora de IMC</h1>
+    <p>Calcule seu Índice de Massa Corporal</p>
+  </header>
+
+  <div class="base-container">
+    <div class="container">
+      <div class="input-group">
+        <label for="peso">Peso (kg):</label>
+        <input type="number" id="peso" step="0.01" placeholder="Ex: 70.5">
+      </div>
+
+      <div class="input-group">
+        <label for="altura">Altura (m):</label>
+        <input type="number" id="altura" step="0.01" placeholder="Ex: 1.75">
+      </div>
+
+      <button id="calcular-btn">Calcular IMC</button>
+
+      <div id="resultado"></div>
+      <div id="erro-messagem"></div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2023 Projeto Desenvolvido por <span id="your-name"></span></p>
+    <p>PARA A DISCIPLINA DE DESENVOLVIMENTO WEB FRONT-END (TURMA A)</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

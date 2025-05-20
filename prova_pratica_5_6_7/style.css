@@ -1,0 +1,136 @@
+/* Definição das Variáveis de Cor */
+:root {
+    --color-bg-body: #e9ecef; 
+    --color-white: #FFFFFF;
+    --color-primary: #007bff;
+
+    --shadow-light: rgba(0, 0, 0, 0.1); 
+    --shadow-medium: rgba(0, 0, 0, 0.1);
+
+    --color-text-subtle-light: #e9ecef; 
+    --color-text-dark: #333; 
+    --color-text-muted: #555; 
+
+    --color-bg-footer: #333; 
+
+    --color-border-light: #ccc;
+    --color-border-subtle: #eee; 
+
+    --color-button-success: #28a745; 
+    --color-button-success-hover: #218838;
+
+    --color-bg-error: #c82333; 
+
+    /* Cores para as classificações de IMC */
+    --color-text-imc-low: #ffc107; /* Amarelo */
+    --color-text-imc-normal: #28a745; /* Verde */
+    --color-text-imc-overweight: #fd7e14; /* Laranja */
+    --color-text-imc-obese: #dc3545; /* Vermelho */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-bg-body);
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  color: var(--color-text-dark);
+}
+
+header {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  text-align: center;
+  padding: 20px;
+}
+
+.base-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.container {
+  background-color: var(--color-white);
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 12px var(--shadow-light);
+  max-width: 500px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.input-group input[type="number"] {
+  padding: 10px;
+  border: 1px solid var(--color-border-light);
+  border-radius: 5px;
+  width: 100%;
+}
+
+#calcular-btn {
+  background-color: var(--color-button-success);
+  color: var(--color-white);
+  font-size: 16px;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#resultado {
+  padding: 15px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.resultado-baixo {
+  color: var(--color-text-imc-low);
+}
+
+.resultado-normal {
+  color: var(--color-text-imc-normal);
+}
+
+.resultado-sobre {
+  color: var(--color-text-imc-overweight);
+}
+
+.resultado-obesidade {
+  color: var(--color-text-imc-obese);
+}
+
+#erro-messagem {
+  background-color: var(--color-bg-error);
+  color: var(--color-white);
+  padding: 10px;
+  border-radius: 5px;
+  display: none;
+  text-align: center;
+}
+
+footer {
+  background-color: var(--color-bg-footer);
+  color: var(--color-text-subtle-light);
+  text-align: center;
+  padding: 15px;
+}
